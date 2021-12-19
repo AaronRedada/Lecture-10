@@ -1,0 +1,51 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	cout << "Enter which Program you which to see.\n";
+	cout << "1: 0 to 50 in increments of 1.\n";
+	cout << "2: 50 to 0 in decrements of 1.\n";
+	cout << "3: 30 to 50 in increments of 1.\n";
+	cout << "4: 50 to 10 in decrements of 2.\n";
+	cout << "5: 100 to 200 in increments of 5.\n";
+
+	int choice;
+	cin >> choice;
+	cout << "\n";
+
+	switch (choice) {
+
+	case 1:
+		for (int x = 0; x < 51; x++) {
+			cout << x << "\n";
+		}
+		break;
+	case 2:
+		for (int y = 50; y >= 0; --y) {
+			cout << y << "\n";
+		}
+		break;
+	case 3:
+		for (int z = 30; z < 51; z++) {
+			cout << z << "\n";
+		}
+		break;
+	case 4:
+		for (int w = 50; w >= 10; --w) {
+			cout << w << "\n";
+			w = w - 1;
+		}
+		break;
+	case 5:
+		for (int v = 100; v < 201; v++) {
+			cout << v << "\n";
+			v = v + 4;
+		}
+		break;
+	default:
+		cout << "Invalid Input" << endl;
+	}
+
+	system("pause>0");
+}
